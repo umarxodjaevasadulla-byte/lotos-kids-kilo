@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ панель - LOTOS KIDS KILO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Форма входа -->
+    <div id="loginSection" class="login-container">
+        <form class="login-form" id="loginForm">
+            <h2>🔐 Админ панель</h2>
+            <div class="form-group">
+                <label>Логин / Login</label>
+                <input type="text" id="username" placeholder="Введите логин" required>
+            </div>
+            <div class="form-group">
+                <label>Пароль / Parol</label>
+                <input type="password" id="password" placeholder="Введите пароль" required>
+            </div>
+            <button type="submit" class="login-btn">Войти / Kirish</button>
+            <p class="error-message" id="errorMsg">Неверный логин или пароль</p>
+            <p style="text-align: center; margin-top: 20px; color: #666;">
+                <a href="index.html">← Вернуться на сайт</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- Админ панель (скрыта по умолчанию) -->
+    <div id="adminSection" style="display: none;">
+        <div class="admin-container">
+            <div class="admin-header">
+                <div>
+                    <h1 class="admin-title">🎨 Админ панель LOTOS KIDS KILO</h1>
+                    <p>Управление товарами / Tovarlar boshqaruvi</p>
+                </div>
+                <button class="logout-btn" onclick="logout()">Выйти / Chiqish</button>
+            </div>
+
+            <div class="admin-grid">
+                <!-- Форма добавления/редактирования -->
+                <div class="admin-form">
+                    <h3 id="formTitle">Добавить товар / Tovar qo'shish</h3>
+                    <form id="productForm">
+                        <input type="hidden" id="productId">
+
+                        <div class="form-group">
+                            <label>Название (RU) / Nomi (RU)</label>
+                            <input type="text" id="nameRu" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Название (UZ) / Nomi (UZ)</label>
+                            <input type="text" id="nameUz" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Цена (сум) / Narxi (so'm)</label>
+                            <input type="number" id="price" required min="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Категория / Kategoriya</label>
+                            <select id="category" required>
+                                <option value="suits">Костюмы / Kostyumlar</option>
+                                <option value="dresses">Платья / Ko'ylaklar</option>
+                                <option value="tshirts">Футболки / Futbolkalar</option>
+                                <option value="shorts">Шорты / Shortiklar</option>
+                                <option value="jackets">Куртки / Kurtkalar</option>
+                                <option value="other">Другое / Boshqa</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Описание (RU) / Tavsif (RU)</label>
+                            <textarea id="descRu" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Описание (UZ) / Tavsif (UZ)</label>
+                            <textarea id="descUz" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ссылка на фото / Rasm havolasi</label>
+                            <input type="url" id="imageUrl" placeholder="https://..." required>
+                            <small style="color: #666;">URL изображения товара</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Размеры (через запятую) / O'lchamlar (vergul bilan)</label>
+                            <input type="text" id="sizes" placeholder="2-3 года, 4-5 лет, 6-7 лет" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="inStock" checked>
+                                В наличии / Sotuvda mavjud
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            💾 Сохранить / Saqlash
+                        </button>
+                        <button type="button" class="btn" onclick="resetForm()" style="width: 100%; margin-top: 10px; background: #eee;">
+                            ❌ Отмена / Bekor qilish
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Список товаров -->
+                <div class="admin-products">
+                    <h3>Список товаров / Tovarlar ro'yxati</h3>
+                    <div id="adminProductsList">
+                        <!-- Товары загружаются через JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

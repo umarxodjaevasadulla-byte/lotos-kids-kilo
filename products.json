@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name_ru": "Костюм спортивный детский",
+    "name_uz": "Bolalar sport kostyumi",
+    "price": 45000,
+    "description_ru": "Удобный спортивный костюм для мальчиков и девочек. Размеры: 2-8 лет. Материал: хлопок 100%.",
+    "description_uz": "O'g'il va qiz bolalar uchun qulay sport kostyumi. O'lchamlar: 2-8 yosh. Material: 100% paxta.",
+    "image": "https://images.unsplash.com/photo-1519238263496-6361937cb83f?w=400",
+    "category": "suits",
+    "sizes": ["2-3 года", "4-5 лет", "6-7 лет", "8 лет"],
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name_ru": "Платье нарядное",
+    "name_uz": "Bayramona ko'ylak",
+    "price": 55000,
+    "description_ru": "Красивое нарядное платье для девочек. Подходит для праздников и особых случаев. Размеры: 3-10 лет.",
+    "description_uz": "Qiz bolalar uchun chiroyli bayramona ko'ylak. Bayramlar va maxsus voqealar uchun mos. O'lchamlar: 3-10 yosh.",
+    "image": "https://images.unsplash.com/photo-1542384701-c0e46e0eda04?w=400",
+    "category": "dresses",
+    "sizes": ["3-4 года", "5-6 лет", "7-8 лет", "9-10 лет"],
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name_ru": "Футболка с принтом",
+    "name_uz": "Printli futbolka",
+    "price": 25000,
+    "description_ru": "Яркая футболка с веселым принтом. Хлопок высокого качества. Размеры: 1-12 лет.",
+    "description_uz": "Quvnoq printli yorug' futbolka. Yuqori sifatli paxta. O'lchamlar: 1-12 yosh.",
+    "image": "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400",
+    "category": "tshirts",
+    "sizes": ["1-2 года", "3-4 года", "5-6 лет", "7-9 лет", "10-12 лет"],
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name_ru": "Шорты летние",
+    "name_uz": "Yozgi shortik",
+    "price": 20000,
+    "description_ru": "Легкие летние шорты. Удобная посадка, яркие цвета. Размеры: 2-10 лет.",
+    "description_uz": "Yengil yozgi shortiklar. Qulay o'tirish, yorug' ranglar. O'lchamlar: 2-10 yosh.",
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=400",
+    "category": "shorts",
+    "sizes": ["2-3 года", "4-5 лет", "6-7 лет", "8-10 лет"],
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name_ru": "Куртка демисезонная",
+    "name_uz": "Kuz-bahor kurtka",
+    "price": 75000,
+    "description_ru": "Стильная куртка для межсезонья. Водоотталкивающая ткань. Размеры: 3-9 лет.",
+    "description_uz": "Mavsumlararo zamonaviy kurtka. Suv tortib turuvchi mato. O'lchamlar: 3-9 yosh.",
+    "image": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400",
+    "category": "jackets",
+    "sizes": ["3-4 года", "5-6 лет", "7-8 лет", "9 лет"],
+    "inStock": true
+  }
+]

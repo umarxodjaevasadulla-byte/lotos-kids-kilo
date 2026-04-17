@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTOS KIDS KILO - Детская одежда</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="1000018052.jpg" alt="LOTOS KIDS KILO" class="logo-img">
+                </div>
+
+                <nav class="nav">
+                    <a href="#products" data-ru="Товары" data-uz="Tovarlar">Товары</a>
+                    <a href="#about" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+                    <a href="#contacts" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+                    <a href="admin.html" class="admin-link" data-ru="Админ" data-uz="Admin">Админ</a>
+                </nav>
+
+                <div class="language-switcher">
+                    <button id="lang-ru" class="lang-btn active">RU</button>
+                    <button id="lang-uz" class="lang-btn">UZ</button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#products" data-ru="Товары" data-uz="Tovarlar">Товары</a>
+        <a href="#about" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+        <a href="#contacts" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+        <a href="admin.html" data-ru="Админ панель" data-uz="Admin panel">Админ панель</a>
+    </div>
+
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-ru="Детская одежда оптом и в розницу" data-uz="Bolalar kiyimlari ulgurji va chakana">Детская одежда оптом и в розницу</h1>
+                <p data-ru="Качественная одежда для детей от 0 до 12 лет. Доставка по всему Узбекистану!" 
+                   data-uz="0 dan 12 yoshgacha bolalar uchun sifatli kiyimlar. O'zbekiston bo'ylab yetkazib berish!">
+                   Качественная одежда для детей от 0 до 12 лет. Доставка по всему Узбекистану!
+                </p>
+                <a href="https://t.me/your_bot_username" class="btn btn-primary telegram-btn" target="_blank" data-ru="Заказать в Telegram" data-uz="Telegram orqali buyurtma">
+                    📱 Заказать в Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фильтры категорий -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all" data-ru="Все" data-uz="Hammasi">Все</button>
+                <button class="category-btn" data-category="suits" data-ru="Костюмы" data-uz="Kostyumlar">Костюмы</button>
+                <button class="category-btn" data-category="dresses" data-ru="Платья" data-uz="Ko'ylaklar">Платья</button>
+                <button class="category-btn" data-category="tshirts" data-ru="Футболки" data-uz="Futbolkalar">Футболки</button>
+                <button class="category-btn" data-category="shorts" data-ru="Шорты" data-uz="Shortiklar">Шорты</button>
+                <button class="category-btn" data-category="jackets" data-ru="Куртки" data-uz="Kurtkalar">Куртки</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Товары -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title" data-ru="Наши товары" data-uz="Bizning tovarlarimiz">Наши товары</h2>
+            <div id="productsGrid" class="products-grid">
+                <!-- Товары загружаются через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-ru="О нас" data-uz="Biz haqimizda">О нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-ru="LOTOS KIDS KILO — это магазин качественной детской одежды. Мы предлагаем широкий ассортимент одежды для детей от 0 до 12 лет." 
+                       data-uz="LOTOS KIDS KILO — sifatli bolalar kiyimlari do'koni. Biz 0 dan 12 yoshgacha bo'lgan bolalar uchun kiyimlar keng assortimentini taklif qilamiz.">
+                       LOTOS KIDS KILO — это магазин качественной детской одежды. Мы предлагаем широкий ассортимент одежды для детей от 0 до 12 лет.
+                    </p>
+                    <p data-ru="Все товары сертифицированы и безопасны для детей. Работаем оптом и в розницу." 
+                       data-uz="Barcha tovarlar sertifikatlangan va bolalar uchun xavfsiz. Ulgurji va chakana sotish bilan shug'ullanamiz.">
+                       Все товары сертифицированы и безопасны для детей. Работаем оптом и в розницу.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title" data-ru="Контакты" data-uz="Aloqa">Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong data-ru="Telegram:" data-uz="Telegram:">Telegram:</strong>
+                            <a href="https://t.me/your_bot_username" target="_blank">@your_bot_username</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong data-ru="Телефон:" data-uz="Telefon:">Телефон:</strong>
+                            <span>+998 (XX) XXX-XX-XX</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong data-ru="Адрес:" data-uz="Manzil:">Адрес:</strong>
+                            <span data-ru="г. Ташкент, Узбекистан" data-uz="Toshkent shahri, O'zbekiston">г. Ташкент, Узбекистан</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://t.me/your_bot_username" class="btn btn-large telegram-btn" target="_blank" data-ru="🛒 Перейти в Telegram для заказа" data-uz="🛒 Buyurtma uchun Telegramga o'ting">
+                    🛒 Перейти в Telegram для заказа
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 LOTOS KIDS KILO. <span data-ru="Все права защищены." data-uz="Barcha huquqlar himoyalangan.">Все права защищены.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
